@@ -1,12 +1,13 @@
-PUNK.BLOOM is a tiny AS3 library for doing light blooms in FLASHPUNK
---------------------------------------------------------------------
+PUNK.BLOOM is a tiny AS3 library for doing light blooms in [FlashPunk](http://www.flashpunk.net "FlashPunk")
+------------------------------------------------------------------------------------------------------------
 
 There are two classes: BloomLighting and BloomWrapper. 
 The demo folder holds a compilable demo, as an example of
 how to use the library.
 
-MINI DOCS (for more in-depth documentation, check the WIKI up top):
---------------------------------------------------------------------
+MINI DOCS:
+-----------
+(for more in-depth documentation, check out the wiki up top)
 
 BloomLighting extends Entity, and needs to be added to the current
 World. The lighting will show up on whatever layer the BloomLighting
