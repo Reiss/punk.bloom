@@ -83,7 +83,7 @@ package punk.bloom
 			FP.buffer.draw(_postprocess,null,_tint,BlendMode.SCREEN);
 			
 			//clear the canvas after drawing
-			_canvas.fillRect(_screenrect, FP.screen.color);
+			_canvas.fillRect(_screenrect, 0xff000000);
 		}
 		
 	}
