@@ -17,8 +17,8 @@ package punk.bloom
 	public class BloomLighting extends Entity
 	{
 		//buffers and filters for creating the bloom
-		private var _canvas:BitmapData = new BitmapData(FP.width, FP.height, false, FP.screen.color);
-		private var _postprocess:BitmapData = new BitmapData(FP.width, FP.height, false, FP.screen.color);
+		private var _canvas:BitmapData = new BitmapData(FP.width, FP.height, false, 0xff000000);
+		private var _postprocess:BitmapData = new BitmapData(FP.width, FP.height, false, 0xff000000);
 		private var _filter:BlurFilter;
 		
 		//screen size, location
