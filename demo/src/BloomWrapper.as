@@ -1,11 +1,8 @@
-package  
+package punk.bloom
 {
 	import flash.display.BitmapData;
-	import flash.filters.BlurFilter;
 	import flash.geom.Point;
-	import flash.geom.Rectangle;
 	import net.flashpunk.Graphic;
-	import net.flashpunk.FP;
 	/**
 	 * ...
 	 * @author Reiss
@@ -19,6 +16,9 @@ package
 		{
 			super();
 			_graphic = g;
+			active = g.active;
+			visible = g.visible;
+			relative = g.relative;
 		}
 		
 		public function get wrappedGraphic():Graphic
@@ -31,7 +31,11 @@ package
 			if (bloomCanvas)
 				_graphic.render(bloomCanvas, point, camera);
 			_graphic.render(target, point, camera);
-			
+		}
+		
+		override public function update():void
+		{
+			_graphic.update();
 		}
 		
 	}
